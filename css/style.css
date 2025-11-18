@@ -35,7 +35,7 @@ nav a:hover {
     color: #f9a825;
 }
 .hero {
-    background: url('img/solteklogo.jpg') no-repeat center center/cover;
+    background: url('soltek-site/img/solteklogo.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     align-items: center;
