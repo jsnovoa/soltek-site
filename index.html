@@ -1,1 +1,41 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Soltek - Inicio</title><link rel="stylesheet" href="css/style.css"></head><body><header><h1>Soltek</h1><p>Energía solar para tu hogar en Barranquilla</p></header><nav><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="financiamiento.html">Financiamiento</a><a href="contacto.html">Contacto</a></nav><div class="hero">¡Transforma tu hogar con energía solar!</div><section><h2>Bienvenido a Soltek</h2><p>Somos una compañía financiera y comercializadora de paneles solares. Nuestro mercado objetivo son hogares estrato 4, 5 y 6 en el norte, centro histórico y Riomar de Barranquilla.</p></section><footer><p>© 2025 Soltek | Energía Solar para Barranquilla</p></footer></body></html>
+
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Soltek - Calculadora Solar</title>
+<link rel='stylesheet' href='css/style.css'>
+<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+</head>
+<body>
+<header>
+<h1>Soltek</h1>
+<p>Energía solar para tu hogar en Barranquilla</p>
+</header>
+<nav>
+<a href='index.html'>Inicio</a>
+<a href='productos.html'>Productos</a>
+<a href='financiamiento.html'>Financiamiento</a>
+<a href='contacto.html'>Contacto</a>
+</nav>
+<div class='hero'>¡Calcula tu ahorro con energía solar!</div>
+<section>
+<h2>Calculadora de Ahorro</h2>
+<p>Ingresa tu consumo mensual y tarifa para estimar tu ahorro.</p>
+<form>
+<label>Consumo mensual (kWh):</label><br>
+<input type='number' id='consumo' placeholder='Ej: 350'><br>
+<label>Tarifa por kWh (COP):</label><br>
+<input type='number' id='tarifa' placeholder='Ej: 800'><br>
+<button type='button' onclick='calcularAhorro()'>Calcular</button>
+</form>
+<h3 id='resultado' style='margin-top:20px; color:#004481;'></h3>
+<canvas id='grafico'></canvas>
+</section>
+<footer>
+<p>© 2025 Soltek | Energía Solar para Barranquilla</p>
+</footer>
+<script src='js/calculadora.js'></script>
+</body>
+</html>
